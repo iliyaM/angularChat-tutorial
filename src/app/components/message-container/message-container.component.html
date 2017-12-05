@@ -1,0 +1,10 @@
+
+<div *ngIf="authState == null; else input">
+    <h4>Login to submit messages</h4>
+</div>
+
+<ng-template #input>
+        <input type="text" [(ngModel)]="inputValue" (keyup)="inputTriggered($event)">
+        <button (click)="submitValue(inputValue)">Submit Value</button>
+</ng-template>
+

@@ -1,0 +1,17 @@
+section.main {
+    display: flex;
+    justify-content: space-around;
+}
+
+section.sidebar {
+    width: 30%;
+    background-color: lightcyan;
+}
+
+section.home {
+    width: 70%;
+    text-align: center;
+
+    box-sizing: border-box;
+    padding: 0 1em;
+}

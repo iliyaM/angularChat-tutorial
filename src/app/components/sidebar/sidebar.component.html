@@ -1,0 +1,32 @@
+<div class="sidebarContent" *ngIf="authState == null; else logout">
+
+  <div class="register">
+      <h2>register</h2>
+      <label>username:
+          <input type="text" [(ngModel)]="inputUserName">
+      </label>
+      <label>password:
+          <input type="text" [(ngModel)]="inputPassword">
+      </label>
+      <button (click)="submitSidebar()">Register</button>
+  </div>
+
+  <!-- LogIn -->
+  <div class="logIn">
+      <h2>logIn</h2>
+      <label>username:
+          <input type="text" [(ngModel)]="logInUsername">
+      </label>
+
+      <label>password:
+          <input type="text" [(ngModel)]="logInPassword">
+      </label>
+      <button (click)="login()">Login</button>
+  </div>
+
+</div>
+
+<ng-template #logout>
+  <h2>userName: {{ authState.userName }} </h2>
+  <button (click)="logOut()">LogOut</button>
+</ng-template>

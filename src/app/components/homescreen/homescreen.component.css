@@ -1,0 +1,8 @@
+div.message {
+    background-color: lightgray;
+    text-align: left;
+    font-size: 1.2em;
+    box-sizing: border-box;
+    padding: 1em;
+    margin-bottom: 1em;
+}

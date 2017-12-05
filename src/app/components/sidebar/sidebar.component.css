@@ -1,0 +1,24 @@
+div.sidebarContent div {
+    display: flex;
+    flex-direction: column;
+}
+
+div.sidebarContent div label {
+    margin-bottom: 1em;
+}
+
+div.sidebarContent div label input {
+    padding: 0.5em 0;
+}
+
+div.sidebarContent div button {
+    width: 200px;
+    padding: 0.5em 0;
+    margin-bottom: 1em;
+}
+
+
+/* div.sidebarContent div.signIn,
+div.sidebarContent div.login {
+    margin-bottom: 1em;
+} */
